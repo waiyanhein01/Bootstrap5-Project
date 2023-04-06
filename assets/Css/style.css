@@ -1,0 +1,239 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+.loading {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html[data-theme="dark"] {
+    --wy-bg-dark: #18181b;
+    --wy-bg-light: #ffffff;
+    --wy-bg-dark-50: #27272a;
+    --wy-text-white: #ffffff;
+    --wy-text-black: #18181b;
+    --wy-card-purple: #581c87;
+    --wy-card-purple-50: #7e22ce;
+}
+
+html[data-theme="light"] {
+    --wy-card-purple: #581c87;
+    --wy-card-purple-50: #7e22ce;
+    --wy-bg-dark: #ffffff;
+}
+
+body{
+    background-color: var(--wy-bg-dark);
+    color: var(--wy-text-white);
+}
+.card {
+    background-color: var(--wy-bg-dark);
+}
+
+.contact {
+    background-color: var(--wy-card-purple);
+}
+
+.service {
+    background-color: var(--wy-card-purple-50);
+}
+
+.princing {
+    background-color: var(--wy-bg-dark) !important;
+}
+
+.logo {
+    color: var(--wy-text-white) !important;
+}
+
+.navbar {
+    background-color: var(--wy-bg-dark) !important;
+}
+
+.navbar a{
+    color: var(--wy-text-white) !important;
+}
+
+.loading {
+    background-color: var(--wy-bg-dark);
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+  }
+  
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #dc2626;
+    border-radius: 100%;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+  
+.icon-circle {
+    width: 40px;
+    height: 40px
+}
+
+.bg-purple {
+    background-color: #581c87;
+}
+
+.bg-red-50 {
+    background-color: #f87171;
+}
+
+.bg-purple-50 {
+    background-color: #7e22ce;
+}
+
+.bg-gray {
+    background-color: #F7F8F8;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.fs {
+    font-size: 13px;
+}
+
+.mt {
+    margin-top: -40px;
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 2;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.navbar-toggler {
+    padding: 0;
+    /* border-radius: 100%; */
+    background-color: #e4e4e7;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* menu icon */
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.menu-icon span {
+    height: 4px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: #3f3f46;   
+    position: absolute;
+    transition: 0.5s;
+    
+}
+
+.menu-icon span:nth-child(1) {
+    transform: translateY(-8px);
+    width: 20px;
+    left: 8px;
+}
+
+.menu-icon span:nth-child(2) {
+    transform: translateY(8px);
+    width: 15px;
+    left: 8px;
+}
+
+.menu-icon.show span:nth-child(3) {
+    transform: translateX(40px);
+    opacity: 0;
+}
+
+.menu-icon.show span:nth-child(1) {
+    transform: translateX(0) rotate(45deg);
+    width: 25px;
+    transition: 0.125s;
+    background-color: #ef4444;
+}
+
+.menu-icon.show span:nth-child(2) {
+    transform: translateX(0) rotate(315deg);
+    width: 25px;
+    transition: 0.125s;
+    background-color: #ef4444;
+}
